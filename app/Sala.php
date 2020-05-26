@@ -4,17 +4,17 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Movie extends Model
-{
-    public function scopeMovies($query)
+class Sala extends Model
+{   
+    public $fillable = ['nombre'];
+    public function scopeSalas($query)
     {
         return $query;
         
     }
 
-    public function shows()
-    {
+    public function shows(){
         return $this->hasMany(Show::class);
-    }
 
+    }
 }

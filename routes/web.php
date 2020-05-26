@@ -31,6 +31,8 @@ Route::resource('edulcerias', 'EdulceriaController');
 Route::resource('etaquillas', 'EtaquillaController');
 Route::resource('movies', 'MovieController');
 Route::resource('products', 'ProductController');
+Route::resource('salas', 'SalaController');
+Route::resource('shows', 'ShowController');
 //Patients
 
 
@@ -48,6 +50,13 @@ Route::middleware(['auth','doctor'])->namespace('Doctor')->group(function (){
     
 });
 
+
+Route::middleware(['auth','taquilla'])->namespace('Admin')->group(function (){
+
+    
+    Route::resource('sales', 'SaleController');
+    
+});
 
 
 Route::middleware('auth')->group(function (){

@@ -19,12 +19,12 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{url('#')}}">
+            <a class="nav-link" href="{{url('/salas')}}">
             <i class="ni ni-building text-orange"></i> Salas
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/shows">
             <i class="ni ni-watch-time text-yellow"></i> Horarios
             </a>
         </li>
